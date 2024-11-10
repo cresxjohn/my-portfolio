@@ -1,6 +1,9 @@
 import { Timeline, TimelineEvent } from './TimeLineExp';
 
-export function calculateDuration(startDate: string, showMonths: boolean): string {
+export function calculateDuration(
+  startDate: string,
+  showMonths: boolean
+): string {
   const start: Date = new Date(startDate);
   const now: Date = new Date();
   const diff: number = now.getTime() - start.getTime();
@@ -9,7 +12,7 @@ export function calculateDuration(startDate: string, showMonths: boolean): strin
   const months: number = diffDate.getUTCMonth();
 
   if (years === 1 && months === 0) {
-    return "1 year";
+    return '1 year';
   } else if (!showMonths) {
     return `${years} years`;
   } else {
@@ -20,39 +23,117 @@ export function calculateDuration(startDate: string, showMonths: boolean): strin
 const CurrentTimeLineExp = () => {
   return (
     <Timeline>
-
       <TimelineEvent active>
-
-        <TimelineEvent.Title><a href='https://www.ia.com.mx' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>IA Interactive</a> | Mar. 2023 - {calculateDuration('2023-03-01', true)}</TimelineEvent.Title>
-
+        <TimelineEvent.Title>
+          <p className="font-semibold">
+            Full-time Mid-level Full Stack Engineer
+          </p>
+        </TimelineEvent.Title>
         <TimelineEvent.Description>
-          Frontend development and maintenance of projects implementing agile methodologies (Kanban in Jira) and best practices such as SOLID principles, pixel perfect, clean architecture, clean code using Jira, SCRUM practices, Git, GitFlow practices, Bitbucket, HTML, CSS, Pug, SASS, Tailwind, JavaScript, TypeScript, React, Next.js, Redux, Zustand, Jest and using microfrontends and Storybook to facilitate the use of reusable components.
+          <a
+            href="https://poplarhomes.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white hover:underline transition-all ease underline"
+          >
+            Poplar Homes
+          </a>{' '}
+          | Nov 2022 - Present
         </TimelineEvent.Description>
-
+        <TimelineEvent.Description>
+          As a mid-level full stack engineer at Poplar Homes, I've been pivotal
+          in refining key aspects of our platform. I've focused on improving
+          move-in and renewal processes, introducing multi-banking support in
+          owners’ portal, and enhancing accounting with improved PayNow for
+          one-time payments and AutoPay for scheduled transactions.
+          Collaborating closely with product managers, project managers, UX
+          writers, designers, QA engineers, data engineers, and devops, I've
+          ensured seamless integration of these features. While not leading
+          initiatives directly, my collaborative approach has played a crucial
+          role in translating ideas into tangible improvements. Additionally,
+          I've contributed to on-demand reports, providing valuable insights for
+          informed decision-making. My role underscores a commitment to
+          technical excellence and enhancing the user experience in critical
+          areas of our Prop-tech platform.
+        </TimelineEvent.Description>
       </TimelineEvent>
 
       <TimelineEvent>
-
-        <TimelineEvent.Title>Freelance | Feb. 2022 - Mar. 2023</TimelineEvent.Title>
-
+        <TimelineEvent.Title>
+          <p className="font-semibold">Remote Full Stack Developer</p>
+        </TimelineEvent.Title>
         <TimelineEvent.Description>
-          Design and development of web pages applying agile methodologies, clean architecture, SOLID principles and pixel perfect in all projects, I have developed almost all types of projects from Landing pages, stores, blogs and dashboards.
+          <a
+            href="https://empowerwealth.com.au/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white hover:underline transition-all ease underline"
+          >
+            Empower Wealth
+          </a>{' '}
+          | Jun 2021 - Nov 2022
         </TimelineEvent.Description>
+        <TimelineEvent.Description>
+          I was an integral part of a highly skilled remote developer team at
+          Empower Wealth, a leading Property and Financial Investment Advisor
+          company in Australia. Engaged in the client portal project, we
+          leverage cutting-edge MERN-stack and GraphQL technologies to deliver
+          innovative solutions. My role involved collaborative efforts within
+          the team to ensure the seamless integration of these technologies,
+          contributing to the success of this impactful project for Empower
+          Wealth.
+        </TimelineEvent.Description>
+      </TimelineEvent>
 
+      <TimelineEvent>
+        <TimelineEvent.Title>
+          <p className="font-semibold">Remote React Native Developer</p>
+        </TimelineEvent.Title>
+        <TimelineEvent.Description>
+          <a
+            href="https://oi-you.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white hover:underline transition-all ease underline"
+          >
+            Oi Group
+          </a>{' '}
+          | Jan 2021 - April 2021
+        </TimelineEvent.Description>
+        <TimelineEvent.Description>
+          Independently crafted the Rewind mobile app utilizing React Native
+          technology, showcasing my proficiency and capability to deliver a
+          robust and innovative application.
+        </TimelineEvent.Description>
       </TimelineEvent>
 
       <TimelineEvent last>
-
-        <TimelineEvent.Title>Studio Iluxion | May. 2022 - Jul. 2022</TimelineEvent.Title>
-
+        <TimelineEvent.Title>
+          <p className="font-semibold">Full-time Full Stack Developer</p>
+        </TimelineEvent.Title>
         <TimelineEvent.Description>
-          Web designer and responsive web designer on projects using Figma, HTML, CSS, SCSS, SASS, Bootstrap, JavaScript, jQuery implementing SCRUM, pixel perfect and clean code.
+          <a
+            href="https://www.usep.edu.ph/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white hover:underline transition-all ease underline"
+          >
+            University of Southeastern Philippines
+          </a>{' '}
+          | Aug 2019 - Aug 2021
         </TimelineEvent.Description>
-
+        <TimelineEvent.Description>
+          Executed pivotal projects at the University, including the creation of
+          the Student Portal, feedback system, and enrollment solutions.
+          Notably, I developed UDAS, a document archiving system for university
+          accreditations, recognized as a finalist in Gawad Edukampyon 2021.
+          Employing Python-Django, ReactJS, ExpressJS, and MySQL, these projects
+          exemplify my comprehensive skills in delivering multifaceted
+          solutions.
+        </TimelineEvent.Description>
       </TimelineEvent>
-
     </Timeline>
-  )
-}
+  );
+};
 
 export default CurrentTimeLineExp;

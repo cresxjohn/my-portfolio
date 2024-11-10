@@ -2,8 +2,9 @@ import Link from 'next/link';
 import HeaderAnimation from '../utils/HeaderAnimation';
 import MobileMenuNav from './MobileMenuNav';
 import NavItem from './NavItem';
+import { FC } from 'react';
 
-const Header = () => {
+const Header: FC = () => {
   return (
     <HeaderAnimation>
       <nav className="w-10/12 lg:max-w-screen-md flex items-center justify-between flex-row relative border-gray-700 py-8 sm:pb-8 bg-opacity-60 text-gray-100 gap-5 lg:gap-0">
@@ -15,11 +16,11 @@ const Header = () => {
           </h1>
         </div>
 
-        <div className="ml-[-0.80rem]">
+        {/* <div className="ml-[-0.80rem]">
           <MobileMenuNav />
 
           <NavItem />
-        </div>
+        </div> */}
       </nav>
     </HeaderAnimation>
   );
