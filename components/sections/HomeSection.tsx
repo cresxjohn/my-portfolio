@@ -33,11 +33,11 @@ const HomeSection = () => {
           </h2>
 
           <p className="text-base text-gray-400">
-            A look at all the programming languages, libraries, and tools I've
-            worked with, I started programming about{' '}
-            {calculateDuration('2015-06-01', false)} ago. I have tried a few
-            programming languages and technology stack, both Backend and
-            Frontend.
+            An overview of the programming languages, libraries, and tools I've
+            worked with. I began programming around{' '}
+            {calculateDuration('2015-06-01', false)} ago, exploring various
+            programming languages and technology stacks across both backend and
+            frontend development.
           </p>
 
           <div className="flex flex-col items-start gap-3 mt-3">
