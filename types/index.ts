@@ -26,6 +26,7 @@ export interface AnimationContainerProps {
   children: React.ReactNode;
   customClassName?: string;
   customDelay?: number;
+  [key: string]: any;
 }
 
 export interface CardProjectProps {
