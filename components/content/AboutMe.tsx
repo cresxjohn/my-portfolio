@@ -10,7 +10,7 @@ const AboutMe = () => {
 
       <div className="text-base text-gray-400 flex flex-col gap-4">
         <p>
-          With over {calculateDuration('2019-08-01', false)}+ years of industry
+          With over {calculateDuration('2019-08-01', false)} of industry
           experience, I’ve transformed ideas into impactful web applications for
           startups, corporate leaders, and government organizations alike. I
           thrive on building solutions that are intuitive, efficient, and
@@ -26,8 +26,12 @@ const AboutMe = () => {
         </p>
         <p>
           Above all, I value clear, proactive communication—collaboration is key
-          to every project’s success. Let’s connect and explore how I can help
-          take your business to the next level with technology!
+          to every project’s success. Let’s{' '}
+          <a href="#contact" className="font-semibold underline">
+            connect
+          </a>{' '}
+          and explore how I can help take your business to the next level with
+          technology!
         </p>
       </div>
     </AnimationContainer>

@@ -6,7 +6,8 @@ import { AnimationContainerProps } from '@/types';
 const AnimationContainer = ({
   children,
   customClassName,
-  customDelay = 0.3
+  customDelay = 0.3,
+  ...rest
 }: AnimationContainerProps) => {
   return (
     <motion.div
@@ -15,6 +16,7 @@ const AnimationContainer = ({
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ delay: customDelay }}
+      {...rest}
     >
       {children}
     </motion.div>
